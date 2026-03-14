@@ -300,6 +300,7 @@ body.resume p {
   font-style: italic;
   color: #5a3e28;
   font-size: 0.95rem;
+  box-shadow: 2px 2px 8px rgba(122, 108, 59, 0.15);
 }
 
 body.resume > ul {
