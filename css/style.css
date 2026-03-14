@@ -33,6 +33,8 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: var(--font-heading);
   color: var(--text-heading);
+  text-align: center;
+  line-height: 1.25;
 }
 h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 24px 0 12px; letter-spacing: 0.02em; }
 h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); margin: 18px 0 10px; }
@@ -44,6 +46,7 @@ p {
   font-size: 1rem;
   text-align: center;
   margin: 10px 20px 14px;
+  line-height: 1.7;
 }
 
 /*nav bar (shared)*/
@@ -193,10 +196,12 @@ body.recipe section ol li {
   display: flex;
   align-items: flex-start;
   gap: 14px;
+  background-color: #fff8f0;
   border: 1px solid #f0c898;
   border-radius: 10px;
   padding: 12px 16px;
   margin-bottom: 12px;
+  font-size: 0.97rem;
   box-shadow: 0 2px 8px rgba(180, 100, 30, 0.12);
   list-style: none;
 }
@@ -215,6 +220,7 @@ body.recipe section ol li::before {
   justify-content: center;
   flex-shrink: 0;
 }
+
 /*(unique) peach emoji accent (unique) dashed dividers */
 body.recipe section ul {
   list-style: none;
@@ -264,6 +270,8 @@ body.resume {
 /*(unique) left-aligned professional layout */
 body.resume section {
   text-align: left;
+  max-width: 800px;
+  margin: 24px auto;
 }
 body.resume h1, body.resume h2, body.resume h3,
 body.resume h4, body.resume h5 {
@@ -289,7 +297,9 @@ body.resume p {
   border-radius: 0 10px 10px 0;
   padding: 12px 18px;
   margin: 10px 0;
+  font-style: italic;
   color: #5a3e28;
+  font-size: 0.95rem;
 }
 
 body.resume > ul {
@@ -299,7 +309,10 @@ body.resume > ul {
 }
 body.resume > ul li {
   margin-bottom: 6px;
+  font-size: 0.97rem;
+  list-style: disc;
 }
+
 /*(unique) banner strip behind h1 name */
 body.resume h1 {
   background-color: #fff5e6;
@@ -307,11 +320,16 @@ body.resume h1 {
   -webkit-text-fill-color: #d9b38c;
   padding: 18px 24px;
   border-radius: 10px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 12px var(--shadow);
   margin: 10px 20px 20px;
 }
 
 /*(unique) experience block: left-bar accent on h4, italic h5 */
 body.resume h4 {
+  border-left: 4px solid var(--tan-nav);
+  padding-left: 10px;
+  font-style: italic;
   color: #5a3e28;
   margin-top: 20px;
   text-align: left;
