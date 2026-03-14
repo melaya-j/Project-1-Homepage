@@ -90,3 +90,38 @@ body.homepage img:hover {
 body.recipe h1, body.recipe h2 {
   color: #c0622a;
 }
+/*resume page*/
+body.resume {
+  max-width: 900px;
+  width: 900px;
+}
+
+/*(unique) left-aligned professional layout */
+body.resume section {
+  text-align: left;
+}
+body.resume h1, body.resume h2, body.resume h3,
+body.resume h4, body.resume h5 {
+  text-align: left;
+}
+/*(unique) bold underline section dividers on h2 */
+body.resume h2 {
+  border-bottom: 3px solid var(--tan-dark);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+/*(unique) highlighted blockquote style for project descriptions */
+body.resume p {
+  background-color: #fdf5e6;
+  border-left: 5px solid var(--tan-dark);
+  border-radius: 0 10px 10px 0;
+  padding: 12px 18px;
+  margin: 10px 0;
+}
+
+body.resume > ul {
+  margin: 10px 0 10px 32px;
+}
+body.resume > ul li {
+  margin-bottom: 6px;
+}
