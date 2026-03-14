@@ -61,6 +61,7 @@ nav ul {
   flex-wrap: wrap;
   gap: 8px 20px;
   list-style: none;
+  justify-content: center;
 }
 nav li { font-size: 0.95rem; }
 nav a {
