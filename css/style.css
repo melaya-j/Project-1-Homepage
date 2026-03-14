@@ -125,3 +125,22 @@ body.resume > ul {
 body.resume > ul li {
   margin-bottom: 6px;
 }
+/*(unique) banner strip behind h1 name */
+body.resume h1 {
+  background-color: #fff5e6;
+  padding: 18px 24px;
+  border-radius: 10px;
+  margin: 10px 20px 20px;
+}
+body.resume h4 {
+}
+body.resume h5 {
+  font-size: 0.88rem;
+  font-style: italic;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/*responsive layout —> 900px+*/
+@media (min-width: 900px) {
+}
