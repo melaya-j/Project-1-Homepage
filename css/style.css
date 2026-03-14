@@ -84,6 +84,24 @@ section {
   /*shared*/
   box-shadow: 0 4px 18px var(--shadow);
 }
+/*shared*/
+section:hover {
+  background-color: var(--pink-mid);
+  transform: translateY(-2px);
+}
+
+section p { font-size: 0.95rem; text-align: left; }
+
+section ul, section ol {
+  list-style: circle;
+  margin: 10px 0 10px 32px;
+  color: var(--tan-dark);
+}
+section ol { list-style: decimal; }
+section ul li, section ol li { margin-bottom: 8px; font-size: 0.97rem; }
+ul, ol { list-style: disc; margin: 10px 0 10px 32px; color: var(--text-body); }
+ul li, ol li { margin-bottom: 6px; font-size: 0.97rem; }
+
 img {
   display: block;
   max-width: 100%;
