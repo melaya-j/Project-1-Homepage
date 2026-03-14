@@ -123,10 +123,28 @@ video {
   background-color: var(--cream);
 }
 img.displaySlide { display: block; }
+
+
 /* homepage*/
+
 /* (unique)decorative double border on sections */
 body.homepage section {
   border: 3px solid var(--pink-mid);
+  border-top: 6px solid var(--tan);
+}
+
+/* (unique) animated shimmer text on h1 */
+body.homepage h1 {
+  background: linear-gradient(90deg, var(--tan-dark), #e8a0a0, var(--tan-dark));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
 }
 
 body.homepage img:hover {
