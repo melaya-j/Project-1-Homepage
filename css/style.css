@@ -161,6 +161,10 @@ body.recipe section ol li {
 body.recipe section ol li::before {
   content: counter(step-counter);
   background-color: #e07830;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
   min-width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -243,10 +247,13 @@ body.resume p {
   border-radius: 0 10px 10px 0;
   padding: 12px 18px;
   margin: 10px 0;
+  color: #5a3e28;
 }
 
 body.resume > ul {
+  list-style: disc;
   margin: 10px 0 10px 32px;
+  color: var(--text-body);
 }
 body.resume > ul li {
   margin-bottom: 6px;
@@ -254,6 +261,8 @@ body.resume > ul li {
 /*(unique) banner strip behind h1 name */
 body.resume h1 {
   background-color: #fff5e6;
+  color:#d9b38c ;
+  -webkit-text-fill-color: #d9b38c;
   padding: 18px 24px;
   border-radius: 10px;
   margin: 10px 20px 20px;
