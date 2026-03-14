@@ -142,9 +142,13 @@ body.recipe section {
   border-top: 6px solid #e07830;
 }
 /*resume page*/
+/*FIXED width layout*/
 body.resume {
   max-width: 900px;
   width: 900px;
+  margin: 0 auto;
+  padding-top: 62px;
+  overflow-x: hidden;
 }
 
 /*(unique) left-aligned professional layout */
