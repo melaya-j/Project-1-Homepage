@@ -22,6 +22,9 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-body);
+  padding-top: 62px;
   /*(shared) background color */
   background-color: var(--pink-bg);
 }
@@ -31,9 +34,16 @@ h1, h2, h3, h4, h5 {
   font-family: var(--font-heading);
   color: var(--text-heading);
 }
+h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 24px 0 12px; letter-spacing: 0.02em; }
+h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); margin: 18px 0 10px; }
+h3 { font-size: 1.15rem; margin: 14px 0 8px; font-style: italic; }
+h4 { font-size: 1.05rem; margin: 12px 0 6px; }
+h5 { font-size: 0.95rem; font-weight: 700; margin: 8px 0 4px; color: var(--tan-dark); }
+
 p {
   font-size: 1rem;
   text-align: center;
+  margin: 10px 20px 14px;
 }
 
 /*nav bar (shared)*/
