@@ -4,8 +4,12 @@
 :root {
   --pink-bg:      #f7e7e7;
   --pink-mid:     #f5c3c3;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body:    'Lato', sans-serif;
 }
 body {
+  font-family: var(--font-body);
+  font-size: 1rem;
   /*(shared) background color */
   background-color: var(--pink-bg);
 }
