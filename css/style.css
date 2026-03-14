@@ -189,6 +189,22 @@ body.recipe section ul li:last-child {
 body.recipe section {
   border-top: 6px solid #e07830;
 }
+
+/*(unique) pill-style h3 subheadings */
+body.recipe h3 {
+  background-color: #fde8c8;
+  color: #a0521a;
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+
 /*resume page*/
 /*FIXED width layout*/
 body.resume {
