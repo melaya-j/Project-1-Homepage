@@ -56,6 +56,22 @@ nav {
   border-bottom: 4px solid var(--tan-dark);
   z-index: 1000;
 }
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  list-style: none;
+}
+nav li { font-size: 0.95rem; }
+nav a {
+  color: #fff5e6;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+nav a:hover { color: var(--pink-mid); text-decoration: underline; }
+
 /*(shared) section Shadow (shared)section hover*/
 section {
   background-color: var(--cream);
