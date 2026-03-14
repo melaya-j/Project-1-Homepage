@@ -132,6 +132,17 @@ body.homepage section {
 body.homepage img:hover {
   box-shadow: 0 0 36px rgba(240, 130, 130, 0.75);
 }
+
+/*(unique) italic faded caption paragraph */
+body.homepage section p:last-of-type {
+  font-style: italic;
+  color: var(--tan);
+  font-size: 0.88rem;
+  text-align: center;
+  opacity: 0.85;
+}
+
+
 /*recipe page*/
 
 /*(unique) warm orange heading color */
