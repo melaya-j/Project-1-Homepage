@@ -93,6 +93,24 @@ body.homepage img:hover {
 body.recipe h1, body.recipe h2 {
   color: #c0622a;
 }
+body.recipe section ol li::before {
+  content: counter(step-counter);
+  background-color: #e07830;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+body.recipe section ul li::before {
+  content: "🍑  ";
+}
+/*(unique) decorative top border on sections */
+body.recipe section {
+  border-top: 6px solid #e07830;
+}
 /*resume page*/
 body.resume {
   max-width: 900px;
