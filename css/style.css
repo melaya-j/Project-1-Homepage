@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@300;400;700&display=swap');
+
+/*(shared)CSS variables for color theme*/
+:root {
+  --pink-bg:      #f7e7e7;
+  --pink-mid:     #f5c3c3;
+  --tan:          #c4a882;
+  --tan-dark:     #8b5e34;
+  --tan-nav:      #d9b38c;
+  --cream:        #fffaf0;
+  --cream-warm:   #fdf5e6;
+  --text-body:    #6b4e2e;
+  --text-heading: #b07d5b;
+  --shadow:       rgba(122, 108, 59, 0.4);
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body:    'Lato', sans-serif;
+}
+
+/*basic*/
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-body);
+  padding-top: 62px;
+  /*(shared) background color */
+  background-color: var(--pink-bg);
+}
+
+/*(shared) h1 font*/
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  text-align: center;
+  line-height: 1.25;
+}
+h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 24px 0 12px; letter-spacing: 0.02em; }
+h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); margin: 18px 0 10px; }
+h3 { font-size: 1.15rem; margin: 14px 0 8px; font-style: italic; }
+h4 { font-size: 1.05rem; margin: 12px 0 6px; }
+h5 { font-size: 0.95rem; font-weight: 700; margin: 8px 0 4px; color: var(--tan-dark); }
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 20px 14px;
+  line-height: 1.7;
+}
+
+/*nav bar (shared)*/
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background-color: var(--tan-nav);
+  padding: 12px 24px;
+  border-bottom: 4px solid var(--tan-dark);
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  list-style: none;
+  justify-content: center;
+}
+nav li { font-size: 0.95rem; }
+nav a {
+  color: #fff5e6;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+nav a:hover { color: var(--pink-mid); text-decoration: underline; }
+
+/*(shared) section Shadow (shared)section hover*/
+section {
+  background-color: var(--cream);
+  padding: 28px 24px;
+  margin: 24px 20px;
+  border-radius: 14px;
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /*shared*/
+  box-shadow: 0 4px 18px var(--shadow);
+}
+/*shared*/
+section:hover {
+  background-color: var(--pink-mid);
+  transform: translateY(-2px);
+}
+
+section p { font-size: 0.95rem; text-align: left; }
+
+section ul, section ol {
+  list-style: circle;
+  margin: 10px 0 10px 32px;
+  color: var(--tan-dark);
+}
+section ol { list-style: decimal; }
+section ul li, section ol li { margin-bottom: 8px; font-size: 0.97rem; }
+ul, ol { list-style: disc; margin: 10px 0 10px 32px; color: var(--text-body); }
+ul li, ol li { margin-bottom: 6px; font-size: 0.97rem; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  border: 8px solid var(--tan-nav);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--cream);
+}
+video {
+  display: block;
+  max-width: 100%;
+  width: 500px;
+  margin: 16px auto;
+  border: 8px solid var(--tan-nav);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--cream);
+}
+img.displaySlide { display: block; }
+
+
+/* homepage*/
+
+/* (unique)decorative double border on sections */
+body.homepage section {
+  border: 3px solid var(--pink-mid);
+  border-top: 6px solid var(--tan);
+}
+
+/* (unique) animated shimmer text on h1 */
+body.homepage h1 {
+  background: linear-gradient(90deg, var(--tan-dark), #e8a0a0, var(--tan-dark));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/*(unique) hero gradient on first section */
+body.homepage section:first-of-type {
+  text-align: center;
+  background: linear-gradient(135deg, #fce8e8, #fdf5e6);
+  border-radius: 1em;
+  padding: 2.5em 3%;
+}
+
+/*(unique) pink glow on images */
+body.homepage img {
+  box-shadow: 0 0 20px rgba(240, 160, 160, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+body.homepage img:hover {
+  box-shadow: 0 0 36px rgba(240, 130, 130, 0.75);
+}
+
+/*(unique) italic faded caption paragraph */
+body.homepage section p:last-of-type {
+  font-style: italic;
+  color: var(--tan);
+  font-size: 0.88rem;
+  text-align: center;
+  opacity: 0.85;
+}
+
+
+/*recipe page*/
+
+/*(unique) warm orange heading color */
+body.recipe h1, body.recipe h2 {
+  color: #c0622a;
+}
+
+/*(unique) numbered steps as cards */
+body.recipe section ol {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  counter-reset: step-counter;
+}
+body.recipe section ol li {
+  counter-increment: step-counter;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: #fff8f0;
+  border: 1px solid #f0c898;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 0.97rem;
+  box-shadow: 0 2px 8px rgba(180, 100, 30, 0.12);
+  list-style: none;
+}
+body.recipe section ol li::before {
+  content: counter(step-counter);
+  background-color: #e07830;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/*(unique) peach emoji accent (unique) dashed dividers */
+body.recipe section ul {
+  list-style: none;
+  margin-left: 8px;
+}
+body.recipe section ul li {
+  padding: 7px 0;
+  border-bottom: 1px dashed #f0c898;
+}
+body.recipe section ul li::before {
+  content: "🍑  ";
+}
+body.recipe section ul li:last-child {
+  border-bottom: none;
+}
+
+/*(unique) decorative top border on sections */
+body.recipe section {
+  border-top: 6px solid #e07830;
+}
+
+/*(unique) pill-style h3 subheadings */
+body.recipe h3 {
+  background-color: #fde8c8;
+  color: #a0521a;
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*resume page*/
+/*FIXED width layout*/
+body.resume {
+  max-width: 900px;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 62px;
+  overflow-x: hidden;
+}
+
+/*(unique) left-aligned professional layout */
+body.resume section {
+  text-align: left;
+  max-width: 800px;
+  margin: 24px auto;
+}
+body.resume h1, body.resume h2, body.resume h3,
+body.resume h4, body.resume h5 {
+  text-align: left;
+  color: var(--tan-dark);
+}
+body.resume p { text-align: left; margin: 8px 0; }
+
+/*(unique) bold underline section dividers on h2 */
+body.resume h2 {
+  border-bottom: 3px solid var(--tan-dark);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/*(unique) highlighted blockquote style for project descriptions */
+body.resume p {
+  background-color: #fdf5e6;
+  border-left: 5px solid var(--tan-dark);
+  border-radius: 0 10px 10px 0;
+  padding: 12px 18px;
+  margin: 10px 0;
+  font-style: italic;
+  color: #5a3e28;
+  font-size: 0.95rem;
+  box-shadow: 2px 2px 8px rgba(122, 108, 59, 0.15);
+}
+
+body.resume > ul {
+  list-style: disc;
+  margin: 10px 0 10px 32px;
+  color: var(--text-body);
+}
+body.resume > ul li {
+  margin-bottom: 6px;
+  font-size: 0.97rem;
+  list-style: disc;
+}
+
+/*(unique) banner strip behind h1 name */
+body.resume h1 {
+  background-color: #fff5e6;
+  color:#d9b38c ;
+  -webkit-text-fill-color: #d9b38c;
+  padding: 18px 24px;
+  border-radius: 10px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 12px var(--shadow);
+  margin: 10px 20px 20px;
+}
+
+/*(unique) experience block: left-bar accent on h4, italic h5 */
+body.resume h4 {
+  border-left: 4px solid var(--tan-nav);
+  padding-left: 10px;
+  font-style: italic;
+  color: #5a3e28;
+  margin-top: 20px;
+  text-align: left;
+}
+body.resume h5 {
+  font-size: 0.88rem;
+  color: var(--tan-dark);
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/*responsive layout —> 900px+*/
+@media (min-width: 900px) {
+  body { font-size: 0.9rem; background-color: var(--pink-bg); }
+  body.homepage { background-color: var(--pink-bg); }
+
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 1.9rem; }
+  p  { font-size: 1rem; }
+
+  section { margin: 24px auto; max-width: 860px; }
+  section:hover { background-color: #f0e8dc; transform: translateY(-2px); }
+
+  body.homepage section:hover { background-color: var(--pink-mid); }
+  body.recipe   section:hover { background-color: #fde8c8; }
+  body.resume   section:hover { background-color: #ede8e2; }
+
+  img   { max-width: 440px; max-height: 440px; }
+  video { max-width: 500px; }
+  nav ul { font-size: 0.9rem; }
+  nav li { font-size: 0.9rem; }
+}
