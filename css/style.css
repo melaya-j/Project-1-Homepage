@@ -57,3 +57,13 @@ section {
   /*shared*/
   box-shadow: 0 4px 18px var(--shadow);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  border: 8px solid var(--tan-nav);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--cream);
+}
