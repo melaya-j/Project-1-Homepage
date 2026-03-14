@@ -7,6 +7,10 @@
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body:    'Lato', sans-serif;
 }
+
+/*basic*/
+html { scroll-behavior: smooth; }
+
 body {
   font-family: var(--font-body);
   font-size: 1rem;
