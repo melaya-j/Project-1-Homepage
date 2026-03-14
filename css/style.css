@@ -17,3 +17,34 @@ body {
   /*(shared) background color */
   background-color: var(--pink-bg);
 }
+
+/*(shared) h1 font*/
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+}
+p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*nav bar (shared)*/
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background-color: var(--tan-nav);
+  padding: 12px 24px;
+  border-bottom: 4px solid var(--tan-dark);
+  z-index: 1000;
+}
+/*(shared) section Shadow (shared)section hover*/
+section {
+  background-color: var(--cream);
+  padding: 28px 24px;
+  margin: 24px 20px;
+  border-radius: 14px;
+  text-align: left;
+  /*shared*/
+  box-shadow: 0 4px 18px var(--shadow);
+}
