@@ -104,9 +104,21 @@ body.recipe section ol li::before {
   justify-content: center;
   flex-shrink: 0;
 }
+/*(unique) peach emoji accent (unique) dashed dividers */
+body.recipe section ul {
+  list-style: none;
+  margin-left: 8px;
+}
+body.recipe section ul li {
+  padding: 7px 0;
+}
 body.recipe section ul li::before {
   content: "🍑  ";
 }
+body.recipe section ul li:last-child {
+  border-bottom: none;
+}
+
 /*(unique) decorative top border on sections */
 body.recipe section {
   border-top: 6px solid #e07830;
