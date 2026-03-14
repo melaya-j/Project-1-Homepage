@@ -357,6 +357,9 @@ body.resume h5 {
   section:hover { background-color: #f0e8dc; transform: translateY(-2px); }
 
   body.homepage section:hover { background-color: var(--pink-mid); }
+  body.recipe   section:hover { background-color: #fde8c8; }
+  body.resume   section:hover { background-color: #ede8e2; }
+
   img   { max-width: 440px; max-height: 440px; }
   video { max-width: 500px; }
   nav ul { font-size: 0.9rem; }
