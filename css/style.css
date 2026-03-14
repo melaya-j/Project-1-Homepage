@@ -147,6 +147,19 @@ body.homepage h1 {
   100% { background-position: 200% center; }
 }
 
+/*(unique) hero gradient on first section */
+body.homepage section:first-of-type {
+  text-align: center;
+  background: linear-gradient(135deg, #fce8e8, #fdf5e6);
+  border-radius: 1em;
+  padding: 2.5em 3%;
+}
+
+/*(unique) pink glow on images */
+body.homepage img {
+  box-shadow: 0 0 20px rgba(240, 160, 160, 0.5);
+  transition: box-shadow 0.3s ease;
+}
 body.homepage img:hover {
   box-shadow: 0 0 36px rgba(240, 130, 130, 0.75);
 }
