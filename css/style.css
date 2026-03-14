@@ -345,4 +345,16 @@ body.resume h5 {
 
 /*responsive layout —> 900px+*/
 @media (min-width: 900px) {
+  body { font-size: 0.9rem; background-color: var(--pink-bg); }
+  body.homepage { background-color: var(--pink-bg); }
+
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 1.9rem; }
+  p  { font-size: 1rem; }
+  section { margin: 24px auto; max-width: 860px; }
+  body.homepage section:hover { background-color: var(--pink-mid); }
+  img   { max-width: 440px; max-height: 440px; }
+  video { max-width: 500px; }
+  nav ul { font-size: 0.9rem; }
+  nav li { font-size: 0.9rem; }
 }
