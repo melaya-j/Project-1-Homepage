@@ -4,6 +4,14 @@
 :root {
   --pink-bg:      #f7e7e7;
   --pink-mid:     #f5c3c3;
+  --tan:          #c4a882;
+  --tan-dark:     #8b5e34;
+  --tan-nav:      #d9b38c;
+  --cream:        #fffaf0;
+  --cream-warm:   #fdf5e6;
+  --text-body:    #6b4e2e;
+  --text-heading: #b07d5b;
+  --shadow:       rgba(122, 108, 59, 0.4);
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body:    'Lato', sans-serif;
 }
@@ -45,6 +53,7 @@ section {
   margin: 24px 20px;
   border-radius: 14px;
   text-align: left;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   /*shared*/
   box-shadow: 0 4px 18px var(--shadow);
 }
