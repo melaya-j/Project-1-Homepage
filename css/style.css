@@ -352,7 +352,10 @@ body.resume h5 {
   h1 { font-size: 2.6rem; }
   h2 { font-size: 1.9rem; }
   p  { font-size: 1rem; }
+
   section { margin: 24px auto; max-width: 860px; }
+  section:hover { background-color: #f0e8dc; transform: translateY(-2px); }
+
   body.homepage section:hover { background-color: var(--pink-mid); }
   img   { max-width: 440px; max-height: 440px; }
   video { max-width: 500px; }
