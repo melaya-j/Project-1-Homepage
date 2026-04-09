@@ -196,6 +196,14 @@ body.homepage section p:last-of-type {
 
 /*recipe page*/
 
+/*layout float 3:photo right*/
+body.recipe section img {
+  float: left;
+}
+body.recipe section:last-of-type::after {
+  content: "";
+  clear: both;
+}
 /*(unique) warm orange heading color */
 body.recipe h1, body.recipe h2 {
   color: #c0622a;
