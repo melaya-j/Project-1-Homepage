@@ -286,6 +286,16 @@ body.recipe h3 {
 
 
 /*resume page*/
+/*layout 4: list right*/
+body.resume > ul:first-of-type {
+  float: left;
+  margin: 0 20px 24px 24px;
+  background-color: var(--cream-warm);
+  padding: 18px 18px;
+}
+body.resume > h3:nth-of-type(2) {
+  clear: both;
+}
 /*FIXED width layout*/
 body.resume {
   max-width: 900px;
