@@ -50,6 +50,7 @@ p {
 }
 
 /*nav bar (shared)*/
+/*positioning 1:navbar locked on top*/
 nav {
   position: fixed;
   top: 0; left: 0;
