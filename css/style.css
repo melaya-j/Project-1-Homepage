@@ -199,9 +199,12 @@ body.homepage section p:last-of-type {
 /*layout float 3:photo right*/
 body.recipe section img {
   float: left;
+  margin: 0 0 16px 24px;
+  max-width: 240px;
 }
 body.recipe section:last-of-type::after {
   content: "";
+  display: table;
   clear: both;
 }
 /*(unique) warm orange heading color */
