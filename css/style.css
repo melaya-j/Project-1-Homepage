@@ -131,6 +131,16 @@ img.displaySlide { display: block; }
 
 /* homepage*/
 
+/*float 2: images left*/
+body.homepage section:nth-of-type(2) img:nth-of-type(1) {
+  float: left;
+}
+body.homepage section:nth-of-type(2) img:nth-of-type(2) {
+  float: left;
+}
+body.homepage section:nth-of-type(2)::after {
+  clear: both;
+}
 /* (unique)decorative double border on sections */
 body.homepage section {
   border: 3px solid var(--pink-mid);
