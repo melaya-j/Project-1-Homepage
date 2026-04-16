@@ -11,9 +11,11 @@ function init(){
 	};
 
 	var myMap = new google.maps.Map(el, mapOptions);
+
 	var marker = new google.maps.Marker({
 		position: myLocation,
 		map: myMap,
+		icon: 'hum.jpg'
 	});
 	var contentString = '<h1>IIT Tower</h1><p>IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower. IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower. IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower. IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower.IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower. IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower. IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower. IIT Tower is on the south end of the Mies IIT campus. The official name is Micheal Paul Galvin Tower.</p>';
 }
