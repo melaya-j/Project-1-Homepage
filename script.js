@@ -43,3 +43,14 @@ function showSlide(index) {
   const slideWidth = slides[0].clientWidth;
   document.querySelector('.slides').style.transform = `translateX(-${index * slideWidth}px)`;
 }
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+setInterval(nextSlide, 4000);
+
+document.addEventListener('DOMContentLoaded', () => {
+	showSlide(currentSlide);
+  });
