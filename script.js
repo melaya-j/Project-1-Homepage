@@ -9,4 +9,10 @@ function init(){
 			position: google.maps.ControlPosition.BOTTOM_CENTER
 		}
 	};
+
+	var myMap = new google.maps.Map(el, mapOptions);
+	var marker = new google.maps.Marker({
+		position: myLocation,
+		map: myMap,
+	});
 }
