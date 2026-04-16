@@ -386,9 +386,12 @@ body.resume h5 {
   text-align: left;
 }
 
-/*responsive layout —> 900px+*/
+/*responsive layout */
 @media (min-width: 600px) {
 	 h1 { font-size: 2rem; }
+
+  img   { max-width: 340px; }
+  video { max-width: 380px; }
 }
 @media (min-width: 900px) {
   body { font-size: 0.9rem; background-color: var(--pink-bg); }
