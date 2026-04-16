@@ -386,7 +386,20 @@ body.resume h5 {
   text-align: left;
 }
 
-/*responsive layout —> 900px+*/
+/*responsive layout */
+@media (min-width: 600px) {
+	 h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.1rem; }
+
+  section { margin: 20px 16px; padding: 22px 20px; }
+
+  nav ul { gap: 8px 16px; }
+  nav li { font-size: 0.88rem; }
+
+  img   { max-width: 340px; }
+  video { max-width: 380px; }
+}
 @media (min-width: 900px) {
   body { font-size: 0.9rem; background-color: var(--pink-bg); }
   body.homepage { background-color: var(--pink-bg); }
